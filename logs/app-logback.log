@@ -1,0 +1,38 @@
+2022-04-20 01:37:06,825 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Starting TelefonicaApplication using Java 11.0.14 on DESKTOP-F1DASG5 with PID 13632 (D:\Victor\telefonica\target\classes started by victor.moreno in D:\Victor\telefonica)
+2022-04-20 01:37:06,829 DEBUG [restartedMain] org.springframework.boot.StartupInfoLogger: Running with Spring Boot v2.6.6, Spring v5.3.18
+2022-04-20 01:37:06,830 INFO [restartedMain] org.springframework.boot.SpringApplication: No active profile set, falling back to 1 default profile: "default"
+2022-04-20 01:37:06,918 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-04-20 01:37:06,921 INFO [restartedMain] org.springframework.boot.logging.DeferredLog: For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-04-20 01:37:08,139 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-20 01:37:08,140 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2022-04-20 01:37:08,184 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.test.telefonica.repositories.BaseRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-04-20 01:37:08,192 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport: Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.test.telefonica.repositories.CustomerRepository. If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2022-04-20 01:37:08,194 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 45 ms. Found 0 JDBC repository interfaces.
+2022-04-20 01:37:08,209 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Multiple Spring Data modules found, entering strict repository configuration mode!
+2022-04-20 01:37:08,209 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-04-20 01:37:08,261 INFO [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate: Finished Spring Data repository scanning in 45 ms. Found 2 JPA repository interfaces.
+2022-04-20 01:37:09,389 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat initialized with port(s): 8090 (http)
+2022-04-20 01:37:09,410 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing ProtocolHandler ["http-nio-8090"]
+2022-04-20 01:37:09,411 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting service [Tomcat]
+2022-04-20 01:37:09,412 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-04-20 01:37:09,597 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Initializing Spring embedded WebApplicationContext
+2022-04-20 01:37:09,597 INFO [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext: Root WebApplicationContext: initialization completed in 2675 ms
+2022-04-20 01:37:09,914 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Starting...
+2022-04-20 01:37:10,070 INFO [restartedMain] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Start completed.
+2022-04-20 01:37:10,130 INFO [restartedMain] org.hibernate.jpa.internal.util.LogHelper: HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-04-20 01:37:10,189 INFO [restartedMain] org.hibernate.Version: HHH000412: Hibernate ORM core version 5.6.7.Final
+2022-04-20 01:37:10,367 INFO [restartedMain] org.hibernate.annotations.common.reflection.java.JavaReflectionManager: HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-04-20 01:37:10,545 INFO [restartedMain] org.hibernate.dialect.Dialect: HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2022-04-20 01:37:11,806 INFO [restartedMain] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator: HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-04-20 01:37:11,839 INFO [restartedMain] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-04-20 01:37:12,435 INFO [restartedMain] org.ehcache.shadow.org.terracotta.offheapstore.paging.UpfrontAllocatingPageSource: Allocating 10.0MB in chunks
+2022-04-20 01:37:12,558 INFO [restartedMain] org.ehcache.core.EhcacheManager: Cache 'cacheStore' created in EhcacheManager.
+2022-04-20 01:37:12,599 INFO [restartedMain] org.ehcache.jsr107.Eh107CacheManager: Registering Ehcache MBean javax.cache:type=CacheStatistics,CacheManager=urn.X-ehcache.jsr107-default-config,Cache=cacheStore
+2022-04-20 01:37:14,279 INFO [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer: LiveReload server is running on port 35729
+2022-04-20 01:37:14,320 INFO [restartedMain] org.apache.juli.logging.DirectJDKLog: Starting ProtocolHandler ["http-nio-8090"]
+2022-04-20 01:37:14,362 INFO [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer: Tomcat started on port(s): 8090 (http) with context path ''
+2022-04-20 01:37:14,385 INFO [restartedMain] org.springframework.boot.StartupInfoLogger: Started TelefonicaApplication in 8.341 seconds (JVM running for 11.562)
+2022-04-20 01:37:35,425 INFO [SpringApplicationShutdownHook] org.ehcache.core.EhcacheManager: Cache 'cacheStore' removed from EhcacheManager.
+2022-04-20 01:37:35,493 INFO [SpringApplicationShutdownHook] org.springframework.orm.jpa.AbstractEntityManagerFactoryBean: Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-04-20 01:37:35,506 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown initiated...
+2022-04-20 01:37:35,520 INFO [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource: HikariPool-1 - Shutdown completed.

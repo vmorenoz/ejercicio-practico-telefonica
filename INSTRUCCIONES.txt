@@ -1,0 +1,17 @@
+***INSTRUCCIONES***
+
+Hola :D, este proyecto es la solución al ejercio práctico brindado por el equipo de telefónica.
+
+Para levantar el proyecto se debe hacer lo siguiente:
+
+- BASE DE DATOS
+1) Crear una nueva base de datos en PostgreSQL llamada: test_db
+2) Ejecutar el script de los archivos "db.sql" y "seed.sql" en ese orden, dentro de la nueva base de datos creada.
+
+- APLICACION
+1) Instalar dependencias de maven
+2) En caso de que el agente de postgres corra en otro puerto o con otro host, configurarlos en el archivo application.properties
+3) En caso querer que la app corra en un puerto distinto, modificar en application.properties.
+
+Nota:
+- Swagger está disponible en: http://localhost:8091/swagger-ui/index.html

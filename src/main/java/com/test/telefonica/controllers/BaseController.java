@@ -17,8 +17,8 @@ public interface BaseController<Entity, KeyType> {
     ResponseEntity<?> list(HttpServletRequest request);
 
     @GetMapping("{id")
-    ResponseEntity<?> getById(HttpServletRequest request, @PathVariable KeyType id);
+    ResponseEntity<?> getById(@PathVariable KeyType id);
 
     @GetMapping("{id")
-    ResponseEntity<?> delete(HttpServletRequest request, @PathVariable KeyType id);
+    ResponseEntity<?> delete(@PathVariable KeyType id);
 }

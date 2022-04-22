@@ -10,8 +10,11 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
+import javax.persistence.PrePersist;
+import javax.persistence.PreUpdate;
 import java.io.Serializable;
 import java.sql.Timestamp;
+import java.util.Date;
 
 @JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
 @MappedSuperclass
@@ -27,10 +30,20 @@ public class BaseEntity implements Serializable {
     private Long id;
 
     @JsonIgnore
-    @Column(name = "created_at")
+    @Column(name = "created_at", updatable = false)
     private Timestamp createdAt;
 
     @JsonIgnore
     @Column(name = "updated_at")
     private Timestamp updatedAt;
+
+    @PrePersist
+    private void onPrePersist(){
+        this.setCreatedAt(new Timestamp(new Date().getTime()));
+    }
+
+    @PreUpdate
+    private void onPreUpdate(){
+        this.setUpdatedAt(new Timestamp(new Date().getTime()));
+    }
 }
